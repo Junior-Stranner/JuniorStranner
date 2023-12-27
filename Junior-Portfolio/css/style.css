@@ -20,7 +20,7 @@ body {
     display: flex;
 }
 
- .btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -29,6 +29,17 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+
+h2.titulo{
+   color: white ;
+   font-size: 40px;
+   text-align: center;
+
+}
+
+h2.titulo span{
+   color : #00FF08; 
 }
 
 
@@ -117,6 +128,40 @@ selection.topo-do-site .flex{
     object-fit: cover; /* opcional, para garantir que a imagem cubra as dimensões especificadas */
     margin-top: -30px; /* ajuste o valor conforme necessário para mover a imagem para cima */
     margin-left: -20px; /* ajuste o valor conforme necessário para mover a imagem para a esquerda */
+
+}
+
+section.especialidades{
+    gap: 6opx;
+
+}
+
+section.especialidades .flex{
+    padding: 40px 4%;
+
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 8px white;
+}
+
+.especialidades .especialidades-box i{ 
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3{ 
+    font-size: 30px;
+    margin: 15px ;
 
 }
 
