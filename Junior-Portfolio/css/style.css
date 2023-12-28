@@ -80,7 +80,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-/*ESTILO DO YOPO DO SITE*/
+/*ESTILO DO TOPO DO SITE*/
 section.topo-do-site{
     padding: 40px 4%;
 }
@@ -123,90 +123,84 @@ selection.topo-do-site .flex{
 
 /*Tamanho Imagem */
 .img-topo-site{
-    width: 120px; /* ou qualquer outra largura desejada */
-    height: 120px; /* ou qualquer outra altura desejada */
+    width: auto; /* ou qualquer outra largura desejada */
+    height: auto; /* ou qualquer outra altura desejada */
     object-fit: cover; /* opcional, para garantir que a imagem cubra as dimensões especificadas */
-    margin-top: -30px; /* ajuste o valor conforme necessário para mover a imagem para cima */
-    margin-left: -20px; /* ajuste o valor conforme necessário para mover a imagem para a esquerda */
+    margin-top: -20px; /* ajuste o valor conforme necessário para mover a imagem para cima */
+    margin-left: -10px; /* ajuste o valor conforme necessário para mover a imagem para a esquerda */
 
 }
 
-section.especialidades{
-    gap: 6opx;
-
-}
-
-section.especialidades .flex{
+section.especiliadades {
     padding: 40px 4%;
-
 }
 
-.especialidades .especialidades-box{
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
-
 }
 
-.especialidades .especialidades-box:hover{
-    transform: scale(1.10);
-    box-shadow: 0 0 20px white;
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
 }
 
-.especialidades .especialidades-box i{ 
+.especiliadades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
 }
 
-.especialidades .especialidades-box h3{ 
-    font-size: 30px;
-    margin: 15px ;
-
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
 }
 
-/*Estilo sobre*/
-section.sobre{
-    padding: 40px 4%;
-
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
 }
 
-section.sobre .flex{
-   align-items: center;
-   gap: 60px;
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
 }
 
-.sobre .txt-sobre{
-    color: white;
+.sobre .txt-sobre {
+    color: #fff;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #00FF08;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
-    
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button {
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     border: none;
     background-color: #00FF08;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
-
+    transition: .2s;
 }
 
