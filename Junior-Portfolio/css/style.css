@@ -1,206 +1,163 @@
-/* ESTILO GERAL */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root
+{
+  --bg-black-900:#f2f2fc;
+  --bg-black-100:#fdf9ff;
+  --bg-black-50:#e8dfec;
+  --text-black-900:#302e4d;
+  --text-black-700:#504e70;
+
+}
+body
+{
+  line-height: 1,5;
+  font-size: 16px;
+  font-family: 'Poppins' sans-serif;
+}
+*
+{
     margin: 0;
     padding: 0;
+    outline: none;
+    text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-
-body {
-    background-color: #000;
-    height: 100vh;
-}
-
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.flex{
-    display: flex;
-}
-
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00FF08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-}
-
-h2.titulo{
-   color: white ;
-   font-size: 40px;
-   text-align: center;
+::before,::after
+{
+    box-sizing: border-box;
 
 }
-
-h2.titulo span{
-   color : #00FF08; 
-}
-
- button:hover{
-    box-shadow: 0px 0px 8px #00FF08;
-    transform: scale(1,10);
-}
-
-
-/*ESTILO DO CABECALHO*/
-header{
-    padding: 40px 4%;
-}
-
-header>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-   color: rgb(74, 71, 71);
-   text-decoration: none;
-   display: inline-block;
-   transition: .2s;
-}
-
-header a:hover{
-    color: white;
-    transform: scale(1.10);
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
-}
-
-/*ESTILO DO TOPO DO SITE*/
-section.topo-do-site{
-    padding: 40px 4%;
-}
-
-selection.topo-do-site .flex{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1{
-   color: #fff;
-   font-size: 42px;
-   line-height: 40px;
-}
-
-
-.topo-do-site .txt-topo-site h1 span{
-    color :#00FF08;
-}
-
-.topo-do-site .txt-topo-site p{
-    color :#fff;
-    margin: 40px 0;
-}
-
-.topo-do-site .img-topo-site img{
-  position:  relative;
-  animation: flutuar 2s ease-in-out infinite alternate;
-}
-
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
-}
-
-/*Tamanho Imagem */
-.img-topo-site{
-    width: auto; /* ou qualquer outra largura desejada */
-    height: auto; /* ou qualquer outra altura desejada */
-    object-fit: cover; /* opcional, para garantir que a imagem cubra as dimensões especificadas */
-    margin-top: -20px; /* ajuste o valor conforme necessário para mover a imagem para cima */
-    margin-left: -10px; /* ajuste o valor conforme necessário para mover a imagem para a esquerda */
+.ul
+{
+     list-style: none;
 
 }
-
-section.especiliadades {
-    padding: 40px 4%;
-}
-
-section.especiliadades .flex {
-    gap: 60px;
-}
-
-.especiliadades .especialidades-box {
-    color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especiliadades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
-}
-
-.especiliadades .especialidades-box i {
-    font-size: 70px;
-    color: #00FF08;
-}
-
-.especiliadades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-/* ESTILO DO SOBRE */
-section.sobre {
-    padding: 80px 4%;
-}
-
-section.sobre .flex {
-    align-items: center;
-    gap: 60px;
-}
-
-.sobre .txt-sobre {
-    color: #fff;
-}
-
-.sobre .txt-sobre h2 {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
-}
-
-.sobre .txt-sobre h2 span {
-    color: #00FF08;
+.section
+{
+    background: var(--bg-black-900);
+    min-height: 100vh;
     display: block;
-}
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
 
-.sobre .txt-sobre p {
-    margin: 20px 0;
-    text-align: justify;
 }
+/* aside */
+.aside
+{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #00FF08;
-    font-size: 22px;
+}
+.aside .logo
+{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.aside .logo a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.aside .logo a span
+{
+    font-family: 'Clicker Script' , cursive;
+    font-family: 40px;
+
+}
+.aside .logo a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+    
+}
+.aside .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+
+}
+.aside .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
     cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-}
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
+}
+.aside .nav-toggler span
+{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+
+}
+.aside .nav
+{
+    margin-top: 50px;
+
+}
+.aside .nav li
+{
+   margin-bottom: 20px;
+   display: block;
+}
+.aside .nav li a
+{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+.aside .nav li a.active
+{
+    color: var(--skin-color);
+
+}
+.aside .nav li a i
+{
+ margin-right: 15px;
+
+}
