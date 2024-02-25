@@ -2,27 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Fredericka+the+Great&family=Monoton&family=Nabla&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-  --ff-logo: "Bruno Ace", cursive;
-  --ff-content: "Roboto", sans-serif;
+    --ff-logo: "Bruno Ace", cursive;
+    --ff-content: "Roboto", sans-serif;
 
-  --lightcolor: white;
-  --intercolor: grey;
-  --darkcolor: black;
-  --bg: white;
-  --fc: black;
+    --lightcolor: white;
+    --intercolor: grey;
+    --darkcolor: black;
+    --bg: white;
+    --fc: black;
 
-  --color1: #faf5ff;
-  --color2: #f3e8ff;
-  --color5: #c084fc;
-  --color9: #6b21a8;
-  --color9-opacity: rgba(107, 33, 168, 0.11);
-  --color10: #581c87;
-  --color11: #3b0764;
+    --color1: #faf5ff;
+    --color2: #f3e8ff;
+    --color5: #c084fc;
+    --color9: #36248e;
+    --color9-opacity: rgba(107, 33, 168, 0.11);
+    --color10:#36248e;
+    --color11: #1534bf;
 
-  --filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg)
-    brightness(103%) contrast(102%);
-  --invertcolor: none;
-}
+    --filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg)
+      brightness(103%) contrast(102%);
+    --invertcolor: none;
+  }
+
 
 /* Dark mode styles */
 /* @media screen and (prefers-color-scheme: dark) {

@@ -1,170 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--GOOGLE FONTES-->
- <!--FIM BOOTSRAP ICONS-->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <title>Heinz Stranner Júnior</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Heinz Stranner  - Back-End Software Developer</title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div id="topo" class="header flex container">
+            <!-- Logo -->
+            <p class="nav-primary logo">JU<span>.DEV</span></p>
+            <div id="close-menu" onclick="toggleMenu()"></div>
 
-  <!-- ============== Main Conteiner Start ================ -->
-  <div class="main-container">
-    <!-- ===== Aside Start ===== -->
-    <div class="aside">
-      <div class="logo">
-        <a href="#"><span>A</span>tlas</a>
-      </div>
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
-      </ul>
-    </div>
+            <!-- Nav links -->
+            <nav id="nav-secondary" class="nav-secondary flex">
+                <ul>
+                    <!-- <li><button>Home</button></li> -->
+                    <li><a onclick="toggleMenu()" href="#about"><button class="btn-principal title-about">About</button></a></li>
+                    <li><a onclick="toggleMenu()" href="#projects"><button class="btn-principal title-project">Projects</button></a></li>
+                    <li><a onclick="toggleMenu()" href="#contact"><button class="btn-principal title-contact">Contact</button></a></li>
+                </ul>
+                <!-- Nav social media -->
+                <div class="social-media flex">
+                    <a target="_blank" href="https://github.com/barbaradamasdev"><img src="images/icons/github.png" alt="Icone do Github"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/barbaradamascenodev/"><img src="images/icons/linkedin.png" alt="Icone do LikedIn"></a>
+                </div>
+
+                <div class="change-mode" id="change-mode">
+                    <input type="checkbox" name="change-theme" id="change-theme">
+                    <label for="change-theme" class="change-theme flex">
+                        <div class="mode-moon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142c3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"/></svg></div>
+                        <div class="mode-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="yellow" d="M12 19a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm6.364-2.05l.707.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414Zm-12.728 0a1 1 0 0 1 1.497 1.32l-.083.094l-.707.707a1 1 0 0 1-1.497-1.32l.083-.094l.707-.707ZM12 6a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm-8 5a1 1 0 0 1 .117 1.993L4 13H3a1 1 0 0 1-.117-1.993L3 11h1Zm17 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM4.929 4.929a1 1 0 0 1 1.32-.083l.094.083l.707.707a1 1 0 0 1-1.32 1.497l-.094-.083l-.707-.707a1 1 0 0 1 0-1.414Zm14.142 0a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0ZM12 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Z"/></g></svg></div>
+                        <div id="pointer"></div>
+                    </label>
+                </div>
+
+                <select class="language" id="language" name="language" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="pt" selected>Português (BR)</option>
+                </select>
+            </nav>
+
+
+            <!-- Hamburger menu -->
+            <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+                <div id="line1" class="line"></div>
+                <div id="line2" class="line"></div>
+                <div id="line3" class="line"></div>
+            </div>    
+        </div>
+    </header>
+
     
-    <!-- ===== Aside End ===== -->
-    <!-- ===== Main Container Start ===== -->
-    <div class="main-container">
-         <!-- ===== Home sekection start ===== -->
-        <section class="home section">
-          <div class="container">
-            <div class="row">
-              <div class="home-info padd-15">
-                <h3 class="hello">Hello , My name is <span class = "name">Heinz STranner Junior </span></h3>
-                <h3 class="my-profession">I´m a  <span class = "typing">Software Developer</span></h3>
-                <p>I am a software developer with two years of experience focusing on the Java language, I always do more than I can,
-                   I am dedicated andfighting for a big opportunity .....</p>
-                   <a href="#contact" class="btn hire-me"> More  About Me </a>
-              </div>
-              <div class="home-img padd-15">
-                <img src="images/Junior-my-foto.png" alt="">
-              </div>
+
+    <main>
+        <section id="about" class="container">
+            <h1>FullStack Developer</h1>
+            <div class="highlight"></div>
+
+            <div class="flex">
+                <article>
+                    <p class="intro-description1">Hello, I'm Heinz Stranner Junior, and I´m a Back-End Software Developer and future fullstack Developer
+                       with a focus on Backend with the Java Language. Based in SC, Brazil.</p> 
+                    <span class="local-img"></span>
+                    <p class="intro-description2">Technology has always fascinated me since adolescence. Initially exploring the world of web design, I eventually followed my heart and dedicated myself to music, playing in orchestras and teaching the art to diverse audiences.</p>
+                    <p class="intro-description3">Later on, life led me to pursue a degree in Information Systems, where I learned algorithms, databases, and Java. In the midst of my college journey, I founded a confectionery business, honing essential skills in listening to and solving customers' problems. In 2022, life called me back to technology. Since then, I've been studying intensively and falling in love with every moment of this journey.
+                    </p>
+                    
+                    <div class="btns flex">
+                        <a href="#contact"><button class="btn-principal intro-btn-principal">Hire me</button></a>
+                        <a href="#projects"><button class="btn-principal intro-btn-secondary">View my portfolio</button></a>
+                    </div>
+                </article>
+                <article>
+                    <img class="profile" src="./projeto-perfil.jpg" alt="">
+                </article>
             </div>
-          </div>
         </section>
-          <!-- ===== Home sekection end ===== -->
-    </div>
-    <!-- ===== Main Container end ===== -->
-  </div>
-  <!-- ============== Main Conteiner End ================ -->
 
-  <header>
-    <div class = "interface">
-      <div class = "logo">
-        <a href="#">
-          <img src="images/java_cup_coffee_icon.png" alt="Java for me">
-        </a>
-      </div><!--logo-->
+        <section id="projects" class="container">
+            <h1 class="sectionAboutTitle">Projects</h1>
+            <div class="highlight"></div>
+            
+            <article class="flex project">
+                <div class="image">
+                    <img src="./projects/projeto space.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Space</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque projectDescription1">I developed a space-themed website using HTML, CSS, and vanilla JavaScript for greater control over pure tools. This is a challenge from FrontEnd Mentor. I always adopt a Mobile First approach, utilizing Flexbox, implementing animations, and a "sandwich" menu to enhance navigation on the mobile version. I prioritized accessibility, emphasizing hierarchy to ensure an inclusive and accessible experience for all users.</p>
+                    <div class="buttons flex">
+                        <a target="_blank" class="btn-live" href="https://marvelous-smakager-724351.netlify.app/">Live Site</a>
+                        <a target="_blank" class="btn-git" href="https://github.com/barbaradamasdev/Space-Travel-Site">Github</a>
+                    </div>
+                </div>
+            </article>
 
-       <nav class = "menu-desktop">
-          <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Especialidade</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-          </ul>
-       </nav>
+            <article class="flex project invert">
+                <div class="image">
+                    <img src="./projects/projeto globo news.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Site de Noticias - GloboNews [Clone]</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Typescript</p>
+                        <p>Angular</p>
+                    </div>
+                    <p class="destaque projectDescription4">I crafted a news website, a clone of GloboNews, a prominent national platform. Emphasizing responsiveness and enhanced interactions for mobile devices, I employed Angular and TypeScript for a robust and efficient development approach, ensuring a seamless and engaging user experience.</p>
+                    <div class="buttons flex">
+                        <a target="_blank" class="btn-live" href="https://barbaradamasdev.github.io/angular-blog-clone-globonews/">Live Site</a>
+                        <a target="_blank" class="btn-git" href="https://github.com/barbaradamasdev/angular-blog-clone-globonews">Github</a>
+                    </div>
+                </div>
+            </article>
 
-       <div class ="btn-contato">
-           <a href="#"></a>
-            <button>Contato</button>
-       </div><!--btn-contato-->
-    </div><!--interface-->
-  </header>
+            <article class="flex project">
+                <div class="image">
+                    <img src="./projects/projeto pokedex.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Pokedex</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>API</p>
+                    </div>
+                    <p class="destaque projectDescription5">A Pokémon library using the Pokédex API, using only HTML, CSS, and pure JavaScript without any libraries. I incorporated a search bar for user convenience. Given the commonplace nature of the project, I prioritized a modern aesthetic with gentle colors in the styling.</p>
+                    <div class="buttons flex">
+                        <a target="_blank" class="btn-live" href="https://zesty-taiyaki-849a2f.netlify.app/">Live Site</a>
+                        <a target="_blank" class="btn-git" href="https://github.com/barbaradamasdev/js-pokedex">Github</a>
+                    </div>
+                </div>
+            </article>
 
-  <main>
-    <section class = "topo-do-site">
-      <div class = "interface">
-        <div class="flex">
-          <div class="txt-topo-site">
-              <h1>DESENVOLVEDOR JAVA BACK-END E FUTURO FULLSTACK <span>.</span></h1>
-              <p>Como desenvolvedor apaixonado por Tecnologia, possuo habilidades sólidas na linguagem de programação Java robusta e versátil.
-                 Ao longo da minha jornada, adquiri proficiência em conceitos fundamentais,
-                 como orientação a objetos, manipulação de exceções e desenvolvimento de aplicações escaláveis e eficientes.</p>
+            <article class="flex project invert">
+                <div class="image">
+                    <img src="./projects/projeto tattoo.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Tattoo Portfolio</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque projectDescription6">I crafted a portfolio for a tattoo artist, utilizing HTML, CSS, and pure JavaScript for precise control. The design incorporates Grid and Flexbox, ensuring responsiveness and adhering to the "mobile-first" approach. I implemented a "sandwich" menu to enhance navigation on mobile devices. Opting for a static site without libraries aims to provide a deeper mastery of the fundamentals. The website emphasizes images to showcase the artist's work.</p>
+                    <div class="buttons flex">
+                        <a target="_blank" class="btn-live" href="https://barbaradamasdev.github.io/Landing-page-Tattoo/">Live Site</a>
+                        <a target="_blank" class="btn-git" href="https://github.com/barbaradamasdev/Landing-page-Tattoo">Github</a>
+                    </div>
+                </div>
+            </article>
 
-                 <div class = "btn-contato">
-                  <a href="#">
-                    <button>Entre em cotato</button>
-                  </a>
-                     
-                 </div>
-          </div><!--txt-topo-site-->
+            <article class="flex project last-card">
+                <div class="image">
+                    <img src="./projects/projeto portfolio.jpg" alt="">
+                </div>
+                <div class="description flex">
+                    <h2>Portfolio</h2>
+                    <div class="languages flex">
+                        <p>Html</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <p class="destaque projectDescription7">I crafted my own portfolio following a "mobile-first" approach with a focus on responsiveness. I included a dark mode, the ability to change the site's language, along with animations and interactions to provide a visually pleasing experience.</p>
+                    <div class="buttons flex">
+                        <a target="_blank" class="btn-live" href="https://barbaradamasdev.github.io/portfolio/">Live Site</a>
+                        <a target="_blank" class="btn-git" href="https://github.com/barbaradamasdev/portfolio">Github</a>
+                    </div>
+                </div>
+            </article>
+          
+        </section>
 
-          <div class = "img-topo-site">
-             <img src="images/Junior-photo-2023.png" alt="Heinz Stranner Junior">
-          </div><!--img-topo-site-->
-        </div><!--flex-->
-      </div><!--interface-->
-    </section><!--topo-do-site-->
+        <section id="education" class="container">
+            <h1 class="sectionSkillsTitle">Skills and Experiences</h1>
+            <div class="highlight"></div>
+            
+            <div class="left flex">
+                <div class="icons">
+                    <ul class="flex">
+                        <li class="flex">
+                            <img src="https://camo.githubusercontent.com/da7acacadecf91d6dc02efcd2be086bb6d78ddff19a1b7a0ab2755a6fda8b1e9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="">
+                            HTML
+                        </li>
+                        <li class="flex">
+                            <img src="https://camo.githubusercontent.com/2e496d4bfc6f753ddca87b521ce95c88219f77800212ffa6d4401ad368c82170/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="">
+                            CSS
+                        </li>
+                        <li class="flex">
+                            <img src="https://camo.githubusercontent.com/442c452cb73752bb1914ce03fce2017056d651a2099696b8594ddf5ccc74825e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="">
+                            JavaScript
+                        </li>
+                        <li class="flex">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                            Node Js
+                        </li>
+                        <li class="flex">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+                            Typescript
+                        </li>
+                        <li class="flex">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                            Java
+                        </li>
+                        <li class="flex">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                            C#
+                        </li>
+                        <li class="flex">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+                            Angular
+                        </li>
+                        <li class="flex">
+                            <img src="images/icons/user-experience.png" />
+                            UX / UI
+                        </li>
+                    </ul>
+                </div>
 
-    <section class = "especialidades">
-         <div class="interface">
-          <h2 class = "titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
-           <div class="flex">
-             <div class="especialidades-box">
-              <i class="bi bi-laptop"></i>
-              <h3>Desenvolvimento BACK-END & Web</h3>
-              <p>Como desenvolvedor backend especializado em Java, incorporo o Thymeleaf em meus projetos
-                 para aprimorar a experiência de desenvolvimento web. Essa ferramenta, associada à robustez da linguagem Java, 
-                 me permite criar aplicações web de forma eficiente,
-                 integrando a lógica do servidor com a apresentação de maneira coesa e dinâmica.</p>
-             </div><!--especialidades-box-->
+                <div class="grid">
+                    <article class="card flex" id="card3" onclick="opencard(id)">
+                        <button class="open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2 class="cardtitle3">Santander Bootcamp 2023 - Fullstack Java+Angular</h2>
+                        <p class="cardSubtitle" style="margin-top: -20px">DIO</p>
+                        <p class="cardDescription3">Bootcamp on the Fullstack Java + Angular track, lasting 2 months, ending in 2023.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Typescript</li>
+                                <li>Angular</li>
+                            </ul>
+                            <ul>
+                                <li>Database SQL e NoSQL</li>
+                                <li>Spring Framework</li>
+                                <li>API Rest</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card flex" id="card1" onclick="opencard(id)">
+                        <button class="open" >
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2 class="cardtitle1">Full Stack JavaScript</h2>
+                        <p class="cardSubtitle" style="margin-top: -20px">The Odin Project</p>
+                        <p class="cardDescription1">An 6-month open-source full stack coding curriculum designed to provide high-quality industry level training with an emphasis on hands-on projects.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>SQL</li>
+                                <li>Git</li>
+                                <li>Acessibility</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="card flex" id="card4" onclick="opencard(id)">
+                        <button class="open">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                        </button>
+                        <h2 class="cardtitle4">Computer Science</h2>
+                        <p class="cardSubtitle4" style="margin-top: -20px">UFPE - Federal University of Pernambuco (Brazil)</p>
+                        <p class="cardDescription4">I attended half of the Information System course as complementary classes from 2014 to 2016, reaching more than 240 hours of workload.</p>
+                        <h4>Curriculum</h4>
+                        <div class="list flex">
+                            <ul>
+                                <li>Java e python - 60h</li>
+                                <li>Algorithms and data structure - 60h</li>
+                                <li>Logic programming - 60h</li>
+                                <li>Database - 60h</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                
+            </div>
+        </section>
 
-             <div class="especialidades-box">
-              <i class="bi bi-database"></i>
-              <h3>Banco de Dados</h3>
-              <p>Como desenvolvedor backend experiente em Java,
-                 utilizo bancos de dados para armazenar e gerenciar dados essenciais para o 
-                  dos sistemas que desenvolvo. Com expertise em SQL e tecnologias de persistência como Hibernate, 
-                  asseguro a integridade e eficiência no acesso aos dados, garantindo uma base sólida para a lógica de negócios dos aplicativos.
-                   Meu conhecimento abrange desde o design eficiente de esquemas de banco de dados até consultas otimizadas, contribuindo para a 
-                   confiabilidade e desempenho das aplicações que desenvolvo.</p>
-             </div><!--especialidades-box-->
+        <section id="contact" class="container">
+            <h1 class="sectionContactTitle">Contact</h1>
+            <div class="highlight"></div>
+            
+            <div class="form">
+                <div class="flex">
+                    <a target="_blank" href="mailto:barbaradamas.dev@gmail.com" class="contact_email flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="#96A9B2" d="M511.824 425.007c1.941-5.245-220.916-173.519-220.916-173.519c-27.9-20.589-42.574-20.913-70.164 0c0 0-222.532 168.138-220.659 173.311l-.045.038c.023.045.06.076.091.117a48.482 48.482 0 0 0 8.119 14.157c1.473 1.786 3.248 3.282 4.955 4.837l-.083.064c.136.121.317.177.453.298c7.235 6.454 16.359 10.634 26.495 11.827c.159.019.287.102.446.121h.612c1.541.147 3.006.517 4.584.517h420.721c20.717 0 38.269-13.028 45.241-31.291c.083-.136.211-.234.287-.374l-.137-.103z"/><path fill="#B9C5C6" d="M256.133 232.176L1.216 423.364V152.515c0-26.4 21.397-47.797 47.797-47.797h414.24c26.4 0 47.797 21.397 47.797 47.797v270.849L256.133 232.176z"/><path fill="#EDECE6" d="m4.189 135.896l217.645 170.949c27.47 20.271 41.918 20.591 69.083 0L508.22 136.167c-3.77-6.834-9.414-12.233-15.869-16.538l2.989-2.342c-7.295-6.641-16.62-10.946-26.971-12.058l-424.455.015c-10.322 1.097-19.662 5.417-26.942 12.043l2.967 2.313c-6.38 4.245-11.972 9.551-15.75 16.296z"/><path fill="#DCE2E2" d="M4.118 136.254C2.207 141.419 221.63 307.099 221.63 307.099c27.47 20.271 41.918 20.591 69.083 0c0 0 219.103-165.546 217.258-170.64l.045-.037c-.022-.045-.059-.074-.089-.115a47.732 47.732 0 0 0-7.994-13.939c-1.45-1.759-3.198-3.231-4.878-4.763l.082-.063c-.134-.119-.312-.175-.446-.294c-7.124-6.354-16.107-10.47-26.086-11.645c-.156-.019-.283-.1-.439-.119h-.602c-1.517-.145-2.96-.509-4.514-.509H48.81c-20.398 0-37.68 12.828-44.543 30.809c-.082.134-.208.231-.283.368l.134.102z"/><path fill="#597B91" d="M291.401 154.645h-38.632a6.155 6.155 0 0 0-6.155 6.155v21.722a6.155 6.155 0 0 0 6.155 6.155h31.415a6.155 6.155 0 0 1 6.155 6.155v11.616a6.155 6.155 0 0 1-6.155 6.155h-31.415a6.155 6.155 0 0 0-6.155 6.155v23.578a6.155 6.155 0 0 0 6.155 6.155h41.316a6.155 6.155 0 0 1 6.155 6.155v12.441a6.155 6.155 0 0 1-6.155 6.155h-75.76a6.155 6.155 0 0 1-6.155-6.155V136.461a6.155 6.155 0 0 1 6.155-6.155h74.81c3.749 0 6.627 3.322 6.092 7.033l-1.733 12.028a6.156 6.156 0 0 1-6.093 5.278z"/></svg>
+                        barbaradamas.dev@gmail.com</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/barbaradamascenodev" class="contact_phone flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#fff" rx="60"/><rect width="256" height="256" fill="#0A66C2" rx="60"/><path fill="#fff" d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4ZM38 59.627c0 11.865 9.767 21.627 21.632 21.627c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627Zm6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4Z"/></g></svg>
+                        LinkedIn</a>
+                    <a target="_blank" href="https://github.com/barbaradamasdev" class="contact_phone flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><g fill="#181616"><path fill-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388c0 26.682 17.303 49.317 41.297 57.303c3.017.56 4.125-1.31 4.125-2.905c0-1.44-.056-6.197-.082-11.243c-16.8 3.653-20.345-7.125-20.345-7.125c-2.747-6.98-6.705-8.836-6.705-8.836c-5.48-3.748.413-3.67.413-3.67c6.063.425 9.257 6.223 9.257 6.223c5.386 9.23 14.127 6.562 17.573 5.02c.542-3.903 2.107-6.568 3.834-8.076c-13.413-1.525-27.514-6.704-27.514-29.843c0-6.593 2.36-11.98 6.223-16.21c-.628-1.52-2.695-7.662.584-15.98c0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033c11.526-7.813 16.59-6.19 16.59-6.19c3.287 8.317 1.22 14.46.593 15.98c3.872 4.23 6.215 9.617 6.215 16.21c0 23.194-14.127 28.3-27.574 29.796c2.167 1.874 4.097 5.55 4.097 11.183c0 8.08-.07 14.583-.07 16.572c0 1.607 1.088 3.49 4.148 2.897c23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" clip-rule="evenodd"/><path d="M26.484 91.806c-.133.3-.605.39-1.035.185c-.44-.196-.685-.605-.543-.906c.13-.31.603-.395 1.04-.188c.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28c-.396-.42-.47-.983-.177-1.254c.298-.266.844-.14 1.24.28c.394.426.472.984.17 1.255zm2.382 3.477c-.37.258-.976.017-1.35-.52c-.37-.538-.37-1.183.01-1.44c.373-.258.97-.025 1.35.507c.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23c-.527-.487-.674-1.18-.343-1.544c.336-.366 1.045-.264 1.564.23c.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486c-.683-.207-1.13-.76-.99-1.238c.14-.477.823-.7 1.512-.485c.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92c-.723.017-1.308-.387-1.315-.877c0-.503.568-.91 1.29-.924c.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117c-.7.13-1.35-.172-1.44-.653c-.086-.498.422-.997 1.122-1.126c.714-.123 1.354.17 1.444.663zm0 0"/></g></svg>
+                        Github</a>
+                    <a target="_blank" href="http://t.me/barbaradamasceno" class="contact_phone flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><defs><linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2AABEE"/><stop offset="100%" stop-color="#229ED9"/></linearGradient></defs><path fill="url(#logosTelegram0)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0Z"/><path fill="#FFF" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072Z"/></svg>
+                        @barbaradamasceno</a>
+                </div>
 
-             <div class="especialidades-box">
-              <i class="bi bi-pc-display"></i>
-              <h3>Desenvolvimento Desktop</h3>
-              <p>Como desenvolvedor com foco em aplicações desktop utilizando Java, concentro meus esforços na criação de soluções robustas
-                 e intuitivas para usuários locais. Através do uso da linguagem Java e frameworks dedicados, como JavaFX ou Swing, desenvolvo
-                  interfaces gráficas interativas e funcionais. Minha experiência abrange desde a concepção de layouts intuitivos até a implementação
-                   de lógica de negócios eficiente nos aplicativos desktop. Ao empregar as melhores práticas de desenvolvimento,
-                 busco criar experiências de usuário envolventes e aplicativos desktop de alto desempenho.</p>
-             </div><!--especialidades-box-->
+                <!-- <form action="mailto:barbaradamas.dev@gmail.com" method="post" enctype="text/plain">
+                    
+                    <input required type="text" class="name" id="name" placeholder=" ">
+                    <label class="label inputname" for="name">Your name</label>
+                    <br>
+                    <input required type="email" class="email" id="email" placeholder=" ">
+                    <label class="label inputemail" for="email">Your email</label>
+                    <br>
+                    <textarea required name="" class="message" id="message"  cols="30" rows="10" placeholder=" "></textarea>
+                    <label class="label inputmessage" for="message">Your message</label>
+                    <br>
+                    <button class="btn-principal btnsend" type="submit">Send message</button>
+                </form> -->
+                
+            </div>
+        </section>
 
-           </div><!--flex-->
-         </div><!--interface-->
-    </section><!--especialidades-->
+        <div>
+            <div class="totop" id="totop">
+                <a href="#topo">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H4.16L12 4.16L19.84 12H15v8Z"/></svg></button>
+                </a>
+            </div>
+        </div>
+    </main>
 
-    <section class="sobre">
-      <div class="interface">
-          <div class="flex">
-              <div class="img-sobre">
-                  <img src="images/Junior-photo-2023.png" alt="">
-              </div><!--img-sobre-->
-
-              <div class="txt-sobre">
-                  <h2>MUITO PRAZER, <span>Heinz Stranner Júnior.</span></h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusantium ducimus dicta suscipit, neque cumque sunt tenetur totam delectus magnam minus ratione. Quidem sequi velit voluptatibus eos omnis ullam officiis.</p>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
-                  <div class="btn-social">
-                      <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                      <a href="#"><button><i class="bi bi-github"></i></button></a>
-                      <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                  </div><!--btn-social-->
-              </div><!--txt-sobre-->
-          </div><!--flex-->
-      </div><!--interface-->
-  </section><!--sobre-->
-
-  </main>
-  
+    <footer>
+        <div class="social-media flex">
+            <a target="_blank" href="https://github.com/barbaradamasdev"><img src="images/icons/github.png" alt="Icone do Github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/barbaradamascenodev/"><img src="images/icons/linkedin.png" alt="Icone do LinkedIn"></a>
+            
+        </div>
+        <p class="footer-text">Designed and Developed by Barbara Damasceno</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
