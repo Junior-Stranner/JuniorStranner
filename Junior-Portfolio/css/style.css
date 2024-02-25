@@ -6,18 +6,18 @@
     --ff-content: "Roboto", sans-serif;
 
     --lightcolor: white;
-    --intercolor: grey;
+    --intercolor: rgb(6, 6, 6);
     --darkcolor: black;
     --bg: white;
     --fc: black;
 
     --color1: #faf5ff;
     --color2: #f3e8ff;
-    --color5: #c084fc;
+    --color5: #96a7f3;
     --color9: #36248e;
     --color9-opacity: rgba(107, 33, 168, 0.11);
     --color10:#36248e;
-    --color11: #1534bf;
+    --color11: #1a004f;
 
     --filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg)
       brightness(103%) contrast(102%);
