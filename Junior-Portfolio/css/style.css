@@ -13,7 +13,7 @@
   --second-bg-color: #202020;
   --text-color: #fff;
   --second-color: #ccc;
-  --main-color: #970000;
+  --main-color: #04989d;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
@@ -267,8 +267,8 @@ header.sticky{
 }
 
 .about-img img{
-  max-width: 430px;
-  height: 630px;
+  max-width: 450px;
+  height: 500px;
   width: 100%;
   border-radius: 10px;
   box-shadow: var(--main-color) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
