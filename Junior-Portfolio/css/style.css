@@ -349,14 +349,6 @@ header.sticky{
   line-height: 1;
 }
 
-.services-content{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
-}
-
 .box{
   display: flex;
   flex-direction: column;
@@ -706,4 +698,21 @@ header.sticky{
       transition: .5s;
       color: #000000;
   }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 2px; /* Largura da linha vertical */
+  background-color: #ccc; /* Cor da linha vertical */
+  margin: 0 auto; /* Centraliza a linha vertical */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espaçamento entre os containers */
 }
