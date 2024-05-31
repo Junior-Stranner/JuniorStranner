@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -71,33 +71,40 @@ body{
 }
 
 header{
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
   right: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 1001;
+  background: var(--home-color);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.05);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: transparent;
-  padding: 22px 15%;
-  border-bottom: 1px solid transparent;
-  transition: all .45s ease; 
+  align-items: center;
+  padding: 20px 45px;
+  gap: 2rem;
+  transition: all 0.6s;
 }
 
 .logo{
   color: var(--text-color);
-  font-size: 35px;
-  font-weight: 700;
   letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 span{
   color: var(--main-color);
 }
 
-.navlist{
+.navlist {
   display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
 }
 
 .navlist a{
@@ -114,6 +121,8 @@ span{
 
 .navlist a.active{
   color: var(--main-color);
+  display: flex;
+
 }
 
 #menu-icon{
@@ -123,6 +132,51 @@ span{
   cursor: pointer;
   margin-left: 25px;
   display: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  #footer .me-md-auto {
+      margin-bottom: 20px;
+  }
+  #footer .social-links {
+      margin-top: 20px;
+  }
+  #footer .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+
+/* Menu start */
+@media (max-width: 800px) {
+  #menu-icon {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+  }
+
+  .navlist{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+    
+  }
+
+  .navlist.active {
+    display: flex;
+}
 }
 
 section{
