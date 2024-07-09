@@ -21,49 +21,23 @@
 }
 
 
-.services-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.box {
-  background: var(--second-bg-color);
-  border: 2px solid var(--main-color);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 200px;
-}
-
-.box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.s-icons {
-  color: var(--main-color);
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-h3 {
+.logo{
   color: var(--text-color);
-  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
-
 
 body::-webkit-scrollbar {
-width: 12px;
+	width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-border-radius: 10px;
-background-color: var(--main-color);
+	border-radius: 10px;
+	background-color: var(--main-color);
 }
+
 
 body{
   background: var(--bg-color);
@@ -84,14 +58,6 @@ header{
   padding: 20px 45px;
   gap: 2rem;
   transition: all 0.6s;
-}
-
-.logo{
-  color: var(--text-color);
-  letter-spacing: 1px;
-  font-size: 35px;
-  font-weight: 800;
-  text-transform: uppercase;
 }
 
 span{
@@ -134,6 +100,46 @@ span{
   display: none;
 }
 
+section{
+  padding: 160px 15% 120px;
+}
+
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  background: var(--second-bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.s-icons {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+
 
 /* Responsive Styles */
 @media (max-width: 800px) {
@@ -159,28 +165,10 @@ span{
       right: 30px;
   }
 
-  .navlist{
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  
-    
-  }
 
-  .navlist.active {
-    display: flex;
-}
 }
 
-section{
-  padding: 160px 15% 120px;
-}
+
 
 .home{
   position: relative;
