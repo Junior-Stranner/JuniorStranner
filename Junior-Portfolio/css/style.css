@@ -44,13 +44,14 @@ body{
   color: var(--text-color);
 }
 
-header{
+/* Estilos do Cabeçalho */
+header {
   position: sticky;
   top: 0;
   right: 0;
   width: 100%;
   z-index: 1001;
-  background: var(--home-color);
+  background: var(--bg-color);
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.05);
   display: flex;
   justify-content: space-between;
@@ -58,6 +59,14 @@ header{
   padding: 20px 45px;
   gap: 2rem;
   transition: all 0.6s;
+}
+
+header .logo {
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 span{
@@ -70,10 +79,9 @@ span{
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: auto;
 }
 
-.navlist a{
+.navlist a {
   color: var(--second-color);
   font-size: 17px;
   font-weight: 500;
@@ -81,7 +89,7 @@ span{
   transition: all .45s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
   color: var(--main-color);
 }
 
@@ -91,7 +99,7 @@ span{
 
 }
 
-#menu-icon{
+#menu-icon {
   font-size: 35px;
   color: var(--text-color);
   z-index: 10001;
@@ -99,6 +107,62 @@ span{
   margin-left: 25px;
   display: none;
 }
+
+/* Estilos do Menu Móvel */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-navlist {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.mobile-navlist li {
+  margin: 15px 0;
+}
+
+.mobile-navlist a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.close-menu {
+  font-size: 30px;
+  color: var(--text-color);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .navlist {
+      display: none;
+  }
+}
+
 
 section{
   padding: 160px 15% 120px;
@@ -181,6 +245,16 @@ h3 {
   align-items: center;
   justify-content: flex-start;
 }
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .home {
+    height: 60vh; /* Reduz a altura para telas menores */
+    background-position: top; /* Altera a posição do background */
+    justify-content: center; /* Centraliza o conteúdo para telas menores */
+  }
+}
+
+
 
 .slide{
   margin-bottom: 20px;
