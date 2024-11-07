@@ -497,8 +497,8 @@ header.sticky{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
+  gap: 2.9rem;
+  margin-top: 3rem;
 }
 
 .row{
@@ -512,8 +512,8 @@ header.sticky{
   max-width: 350px;
   min-width: 100%;
   min-height: 375px;
-  max-height: 375px;
-  border-radius: 10px;
+  max-height: 450px;
+  border-radius: 15px;
   display: block;
   transition: transform 0.5s;
 }
