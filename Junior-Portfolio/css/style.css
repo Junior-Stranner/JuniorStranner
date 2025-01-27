@@ -679,6 +679,51 @@ header.sticky{
   }
 }
 
+/* Estilo das abas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #ddd;
+}
+
+.tab-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Estilo do conteúdo das abas */
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.timeline {
+  /* Seus estilos para a timeline */
+}
+
+/* Outros estilos conforme necessário */
+
+
+/* Outros estilos conforme necessário */
+
+
 @media (max-width: 1100px){
   :root{
       --big-font: 4rem;
