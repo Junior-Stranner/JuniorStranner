@@ -688,20 +688,27 @@ header.sticky{
 
 .tab-button {
   background-color: #f1f1f1;
-  border: none;
-  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 12px 30px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Efeito suave para mudanças */
+  margin: 0 10px; /* Espaçamento entre os botões */
 }
 
 .tab-button:hover {
-  background-color: #ddd;
+  background-color: #ff416c;
+  color: white;
+  transform: translateY(-3px); /* Sombra para efeito de elevação */
 }
 
 .tab-button.active {
-  background-color: #4CAF50;
+  background-color: #ff416c;
   color: white;
+  border-color: #ff416c; /* Alinha a cor da borda com o botão ativo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para destacar o botão ativo */
 }
 
 /* Estilo do conteúdo das abas */
@@ -717,8 +724,6 @@ header.sticky{
 .timeline {
   /* Seus estilos para a timeline */
 }
-
-/* Outros estilos conforme necessário */
 
 
 /* Outros estilos conforme necessário */
