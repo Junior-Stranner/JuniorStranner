@@ -495,96 +495,51 @@ header.sticky{
 
 .portfolio-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   align-items: center;
-  gap: 2.9rem;
+  gap: 3rem;
   margin-top: 3rem;
 }
 
-.row{
+.row {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
+  display: block; /* Faz o link ocupar toda a área da caixa */
 }
 
-.row img{
-  max-width: 350px;
-  min-width: 100%;
-  min-height: 375px;
-  max-height: 450px;
-  border-radius: 15px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.layer{
+.row img {
   width: 100%;
-  height: 0%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.layer {
+  width: 100%;
   background: var(--main-color);
   position: absolute;
-  border-radius: 10px;
-  left: 0;
   bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
   text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
+  transition: all 0.3s ease;
 }
 
-.layer h5{
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
+.layer a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.layer p{
-  color: var(--second-color);
-  font-size: var(--p-small-font);
-  line-height: 1.8;
+.row:hover .layer {
+  background-color: rgba(0, 0, 0, 0.7); /* Dá um efeito de escurecimento quando passa o mouse */
 }
 
-.layer i{
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background: var(--text-color);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.row:hover img{
-  transform: scale(1.1);
-}
-
-.row:hover .layer{
-  height: 100%;
-}
-
-.end{
-  letter-spacing: 1px;
-  text-align: center;
-  padding: 20px 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: var(--bg-color);
-}
-
-.last-text p{
-  color: var(--second-color);
-  font-size: var(--p-font)
-}
 
 #top{
   position: fixed;
