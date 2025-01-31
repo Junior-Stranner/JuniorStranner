@@ -231,104 +231,132 @@
 
 
 <section class="portfolio" id="portfolio">
-    <div class="main-text">
-        <p>Projects</p>
-        <h2>My<span> Projects</span></h2>
+    <!-- Abas -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'personal-projects')">Personal Projects</button>
+        <button class="tab-button" onclick="openTab(event, 'collaborations')">Collaborations</button>
+        <button class="tab-button" onclick="openTab(event, 'academic-projects')">Academic</button>
     </div>
 
-    <div class="portfolio-content">
-        <a href="https://github.com/Junior-Stranner/e-commerce" target="_blank" class="row">
-            <img src="images/userAuth.png" alt="e-commerce - Back-end">
-            <div class="layer">
-                <h5>e-commerce - Back-end</h5>
-                <h6>Technologies used: <br>Spring Boot / JavaMail / Spring Security (JWT) / CORS / MapStruct</h6>
-                <p>The project is a back-end management system for an e-commerce platform...</p>
-                <h6>Work in progress!</h6>
-            </div>
-        </a>
+    <!-- Conteúdo das abas -->
+    <div id="personal-projects" class="tab-content active">
+        <div class="main-text">
+            <p>Projects</p>
+            <h2>My<span> Projects</span></h2>
+        </div>
 
-        <a href="https://github.com/Junior-Stranner/Online-Bibliotec-DataJPA" target="_blank" class="row">
-            <img src="images/Add Authrntication Ju.png" alt="Online Bibliotec/Library">
-            <div class="layer">
-                <h5>Online Bibliotec/Library</h5>
-                <h6>Tecnologies used <br> Java (Spring Data JPA)</h6>
-                <p>The Project itself is an online Library with all Entities related to each other...</p>
-            </div>
-        </a>
+        <div class="portfolio-content">
+            <a href="https://github.com/Junior-Stranner/e-commerce" target="_blank" class="row">
+                <img src="images/userAuth.png" alt="e-commerce - Back-end">
+                <div class="layer">
+                    <h5>e-commerce - Back-end</h5>
+                    <h6>Technologies used: Spring Boot / JavaMail / Spring Security (JWT) / CORS / MapStruct</h6>
+                    <p>Back-end management system for an e-commerce platform...</p>
+                    <h6>Work in progress!</h6>
+                </div>
+            </a>
+            <a href="https://github.com/Junior-Stranner/Online-Bibliotec-DataJPA" target="_blank" class="row">
+                <img src="images/Add Authrntication Ju.png" alt="Online Bibliotec/Library">
+                <div class="layer">
+                    <h5>Online Bibliotec/Library</h5>
+                    <h6>Technologies used: Java (Spring Data JPA)</h6>
+                    <p>Online Library with all entities related to each other...</p>
+                </div>
+            </a>
+            <a href="https://github.com/Junior-Stranner/Fullstack-Login-Page" target="_blank" class="row">
+                <img src="images/Tela Cadastro Signup.png" alt="Login Page">
+                <div class="layer">
+                    <h5>Login Page</h5>
+                    <h6>Tecnologies used ,<br> Java Spring + Security / Angular for Fulstack</h6>
+                    <p>I created a registration and login screen with Java Spring and Angular...</p>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/parking-api" target="_blank" class="row">
+                <img src="images/Add Authrntication Ju.png" alt="Parking-API">
+                <div class="layer">
+                    <h5>Parking-API</h5>
+                    <h6>Tecnologies used <br> Java Spring (JWT , auth0 , SWAGGER )</h6>
+                    <p>I'm developing a Parking app where I register my user who will receive a client...</p>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/Online-Bibliotec" target="_blank" class="row">
+                <img src="images/Biblioteca-Online.jpeg" alt="Online Bibliotec/Library">
+                <div class="layer">
+                    <h5>Online Bibliotec/Library</h5>
+                    <h6>Tecnologies used <br> Java Spring + Thymeleaf</h6>
+                    <p>At the beginning of my Journey with Spring, I developed this online Library...</p>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/Pix-Payment-System" target="_blank" class="row">
+                <img src="images/Email-send.png" alt="Pix Payment-API">
+                <div class="layer">
+                    <h5>Pix Payment-API</h5>
+                    <h6>Tecnologies used <br> Java Spring + Security + JavaMail</h6>
+                    <p>I did a Pix simulation where I send the pix to whoever I want and the receiver will...</p>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/Developer-Challenge-Trainment" target="_blank" class="row">
+                <img src="images/Java-vs-C-Sharp.jpg" alt="Excercicios de lógica de Programação">
+                <div class="layer">
+                    <h5>Excercicios de lógica de Programação</h5>
+                    <h6>Tecnologies used <br> Java & C#</h6>
+                    <p>I am creating a Workbook of Programming logic and data structure exercises...</p>
+                    <h6>Work in progress !</h6>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/Ageny-Haven" target="_blank" class="row">
+                <img src="images/twitter-app.webp" alt="simple Twitter clone">
+                <div class="layer">
+                    <h5>simple Twitter clone</h5>
+                    <h6>Tecnologies used <br> Java & auth2</h6>
+                    <p>is a simple Twiiter clone app to demonstrate the inner working</p>
+                    <h6>Work in progress !</h6>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/EventoTec-spring" target="_blank" class="row">
+                <img src="images/technology-innovation-digital-evolution-homepage.avif" alt="TecEvent">
+                <div class="layer">
+                    <h5>TecEvent</h5>
+                    <h6>Tecnologies used <br> Spring + (AWS) + docker</h6>
+                    <p>A event tec that I simulated , try to joining with AWS...</p>
+                </div>
+            </a>
+    
+            <a href="https://github.com/Junior-Stranner/Ageny-Haven" target="_blank" class="row">
+                <img src="images/mobile-Tik-Tok-pages.png" alt="Haven Agency">
+                <div class="layer">
+                    <h5>Haven Agency</h5>
+                    <h6>Tecnologies used <br> HTML & CSS & JavaScript</h6>
+                    <p>first Freelancer work for a streaming Agency , had the job to create their Website</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
-        <a href="https://github.com/Junior-Stranner/Fullstack-Login-Page" target="_blank" class="row">
-            <img src="images/Tela Cadastro Signup.png" alt="Login Page">
-            <div class="layer">
-                <h5>Login Page</h5>
-                <h6>Tecnologies used ,<br> Java Spring + Security / Angular for Fulstack</h6>
-                <p>I created a registration and login screen with Java Spring and Angular...</p>
-            </div>
-        </a>
+    <div id="collaborations" class="tab-content">
+        <div class="main-text">
+            <p>Projects</p>
+            <h2><span>Collaborations</span></h2>
+        </div>
+        <div class="portfolio-content">
+            <p>Coming soon...</p>
+        </div>
+    </div>
 
-        <a href="https://github.com/Junior-Stranner/parking-api" target="_blank" class="row">
-            <img src="images/Add Authrntication Ju.png" alt="Parking-API">
-            <div class="layer">
-                <h5>Parking-API</h5>
-                <h6>Tecnologies used <br> Java Spring (JWT , auth0 , SWAGGER )</h6>
-                <p>I'm developing a Parking app where I register my user who will receive a client...</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/Online-Bibliotec" target="_blank" class="row">
-            <img src="images/Biblioteca-Online.jpeg" alt="Online Bibliotec/Library">
-            <div class="layer">
-                <h5>Online Bibliotec/Library</h5>
-                <h6>Tecnologies used <br> Java Spring + Thymeleaf</h6>
-                <p>At the beginning of my Journey with Spring, I developed this online Library...</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/Pix-Payment-System" target="_blank" class="row">
-            <img src="images/Email-send.png" alt="Pix Payment-API">
-            <div class="layer">
-                <h5>Pix Payment-API</h5>
-                <h6>Tecnologies used <br> Java Spring + Security + JavaMail</h6>
-                <p>I did a Pix simulation where I send the pix to whoever I want and the receiver will...</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/Developer-Challenge-Trainment" target="_blank" class="row">
-            <img src="images/Java-vs-C-Sharp.jpg" alt="Excercicios de lógica de Programação">
-            <div class="layer">
-                <h5>Excercicios de lógica de Programação</h5>
-                <h6>Tecnologies used <br> Java & C#</h6>
-                <p>I am creating a Workbook of Programming logic and data structure exercises...</p>
-                <h6>Work in progress !</h6>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/Ageny-Haven" target="_blank" class="row">
-            <img src="images/twitter-app.webp" alt="simple Twitter clone">
-            <div class="layer">
-                <h5>simple Twitter clone</h5>
-                <h6>Tecnologies used <br> Java & auth2</h6>
-                <p>is a simple Twiiter clone app to demonstrate the inner working</p>
-                <h6>Work in progress !</h6>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/EventoTec-spring" target="_blank" class="row">
-            <img src="images/technology-innovation-digital-evolution-homepage.avif" alt="TecEvent">
-            <div class="layer">
-                <h5>TecEvent</h5>
-                <h6>Tecnologies used <br> Spring + (AWS) + docker</h6>
-                <p>A event tec that I simulated , try to joining with AWS...</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/Junior-Stranner/Ageny-Haven" target="_blank" class="row">
-            <img src="images/mobile-Tik-Tok-pages.png" alt="Haven Agency">
-            <div class="layer">
-                <h5>Haven Agency</h5>
-                <h6>Tecnologies used <br> HTML & CSS & JavaScript</h6>
-                <p>first Freelancer work for a streaming Agency , had the job to create their Website</p>
-            </div>
-        </a>
+    <div id="academic-projects" class="tab-content">
+        <div class="main-text">
+            <p>Education</p>
+            <h2><span>academic</span> projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <p>Coming soon...</p>
+        </div>
     </div>
 </section>
 
@@ -488,7 +516,7 @@
     </div>
     <!--custom js link-->
     <script type="text/javascript" src="js/Menu.js"></script>
-    <script type="text/javascript" src="js/Experience.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
 
 </body>
 
