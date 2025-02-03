@@ -175,6 +175,48 @@
     font-size: 0.85rem;
     line-height: 1.4;
 }
+/* ... (Outros estilos CSS) ... */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd; /* Linha separadora abaixo das abas */
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500; /* Peso da fonte um pouco menor */
+    color: var(--second-color);
+    transition: color 0.3s ease, border-color 0.3s ease; /* Transição para borda */
+    position: relative; /* Para posicionar a linha inferior */
+}
+
+.tab-button:hover {
+    color: var(--main-color); /* Cor ao passar o mouse */
+}
+
+.tab-button.active {
+    color: var(--main-color);
+    font-weight: bold; /* Negrito na aba ativa */
+}
+
+.tab-button.active::after { /* Linha inferior na aba ativa */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajuste a posição da linha */
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+/* ... (Outros estilos CSS) ... */
 
 /* Seção Experience/Timeline */
 .experience {
@@ -232,3 +274,102 @@
     font-size: var(--p-font);
     margin: 1rem 0;
 }
+
+
+/* ... (Estilos das seções anteriores) ... */
+
+/* Rodapé */
+footer {
+    background: var(--second-bg-color);
+    padding: 20px 15%; /* Ajuste o padding conforme necessário */
+    text-align: center; /* Ou outro alinhamento */
+}
+
+footer p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+}
+
+/* Botão "Voltar ao Topo" */
+#top {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância da borda inferior */
+    right: 20px; /* Ajuste a distância da borda direita */
+    display: none; /* Oculto por padrão */
+    z-index: 1002; /* Sobreposto a outros elementos */
+}
+
+#top.show-top {
+    display: block; /* Exibe o botão quando a classe "show-top" é adicionada */
+}
+
+#top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 28px;
+    color: var(--text-color);
+    background: var(--main-color);
+    transition: all .45s ease; /* Adiciona transição */
+}
+
+#top i:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilos para outros elementos */
+/* ... (Adicione estilos para outros elementos que você possa ter) ... */
+
+
+
+/* ... (Estilos das seções anteriores) ... */
+
+/* Seção Skills */
+.skills {
+    /* Estilos gerais da seção, se necessário */
+}
+    /* ... estilos para .skills ... */
+    
+    .skills .main-text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+.skills .services-content { /* Estilos para o conteúdo das habilidades */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste minmax para responsividade */
+    gap: 2rem; /* Espaçamento entre os boxes */
+    justify-content: center; /* Centraliza os boxes horizontalmente */
+}
+
+.skills .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bg-color); /* Ou var(--second-bg-color) se preferir */
+    padding: 30px 20px; /* Ajuste o padding */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid var(--main-color); /* Borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all .45s ease;
+    min-height: 200px; /* Altura mínima para os boxes */
+}
+
+.skills .box:hover {
+    transform: translateY(-8px);
+}
+
+.skills .s-icons i {
+    font-size: 3rem; /* Tamanho dos ícones */
+    color: var(--main-color); /* Cor dos ícones */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos ícones */
+}
+
+.skills .box h3 {
+    font-size: 1.2rem; /* Tamanho do título da habilidade */
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* ... (Outros estilos de conteúdo) ... */

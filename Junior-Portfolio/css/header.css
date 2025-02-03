@@ -21,14 +21,6 @@ header.sticky {
     height: 10vh;
 }
 
-.logo {
-    color: var(--text-color);
-    letter-spacing: 1px;
-    font-size: 35px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
 .navlist {
     display: flex;
     justify-content: flex-end;
@@ -38,7 +30,6 @@ header.sticky {
 }
 
 .navlist a {
-    color: var(--second-color);
     font-size: 17px;
     font-weight: 500;
     margin: 0 25px;
@@ -46,6 +37,7 @@ header.sticky {
 
 .navlist a.active {
     color: var(--main-color);
+    display: flex;
 }
 
 #menu-icon {
@@ -57,11 +49,44 @@ header.sticky {
     display: none;
 }
 
-.mobile-menu { /* Estilos do menu mobile (como você já tinha) */
-    /* ... */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
-/* Media Query para o Menu Responsivo */
-@media (max-width: 800px) {
-    /* ... */
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.mobile-navlist {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mobile-navlist li {
+    margin: 15px 0;
+}
+
+.mobile-navlist a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.close-menu {
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
