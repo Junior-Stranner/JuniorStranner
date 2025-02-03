@@ -1,0 +1,234 @@
+/* Seção Home */
+.home {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/background.jpg); /* Certifique-se que o caminho da imagem está correto */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ou center, dependendo do seu design */
+}
+
+.home-text { /* Estilos para o texto na seção Home */
+    padding: 0 5%; /* Ajuste a largura do conteúdo */
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+
+.home-text h3 {
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    margin-bottom: 10px;
+}
+
+/* Seção About */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas maiores */
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 430px;
+    height: auto; /* Altura automática para manter a proporção */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--main-color) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção Services */
+.services {
+    background: var(--second-bg-color);
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 200px;
+    text-align: center;
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i {
+    font-size: 36px;
+    color: var(--main-color); /* Cor dos ícones */
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+/* Seção Portfolio */
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsivo */
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    background: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translateY(100%); /* Esconde a camada inicialmente */
+}
+
+.row:hover .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(0); /* Exibe a camada ao passar o mouse */
+}
+
+.layer h5 {
+    margin-bottom: 0.5rem;
+}
+
+.layer h6 {
+    font-size: 0.9rem;
+    color: #eee;
+    margin-bottom: 1rem;
+}
+
+.layer p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Seção Experience/Timeline */
+.experience {
+    background-color: var(--second-bg-color);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.text-box {
+    padding: 20px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    width: 60vw;
+}
+
+.text-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-box small {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.text-box p {
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: var(--p-font);
+    margin: 1rem 0;
+}

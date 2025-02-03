@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #0f0c29;
+    --second-bg-color: #302b63;
+    --text-color: #f0f0f0;
+    --second-color: #b6b6b6;
+    --main-color: #ff416c;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --p-small-font: 0.9rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif; /* Fonte principal */
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+span {
+    color: var(--main-color); /* Cor para spans (geralmente para destacar texto) */
+}
+
+a { /* Estilos globais para links */
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto pai */
+    transition: all .45s ease; /* Transição suave para links */
+}
+
+a:hover {
+    color: var(--main-color); /* Cor do link ao passar o mouse */
+}
