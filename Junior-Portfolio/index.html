@@ -2,80 +2,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio Heinz Stranner Junior</title>
-        <link rel="stylesheet" type="text/css" href="css/stylee.css">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/J-icon.png" type="image/x-icon">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Heinz Stranner Junior</title>
+    <link rel="stylesheet" type="text/css" href="css/stylee.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/J-icon.png" type="image/x-icon">
+</head>
 
 <body> 
 
-    <!--header design-->
-    <header class >
-        <a href="#" class="logo"><span>J</span>unior</a>
+  <!--header design-->
+  <header class="header">
+    <a href="#" class="logo"><span>J</span>unior</a>
 
-        <ul class="navlist">
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navlist" id="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experiences</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+    </ul>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-menu" id="close-menu">&times;</div>
+        <ul class="mobile-navlist">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experiences</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
         </ul>
+    </div>
+</header>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
 
+<!--home section design-->
+<section class="home" id="home">
+    <div class="home-div">
+        <div class="home-text">
+           <!--<div class="slide">-->  
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+           <!--</div>--> 
+            <h1>Heinz Stranner Junior</h1>
+            <h3>Academy<span> Software Back-end Developer.</span></h3>
+            <div class="button">
+                <a href="https://api.whatsapp.com/send/?phone=48999534479" target="_blank" class="btn">come and say Hello 👋</a>
+                <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>See my work</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!--home section design-->
-    <section class="home" id="home">
-        <div class="home-div">
-            <div class="home-text">
-               <!--<div class="slide">-->  
-                    <span class="one">Hello</span>
-                    <span class="two">I'm</span>
-               <!--</div>--> 
-                <h1>Heinz Stranner Junior</h1>
-                <h3>Academy<span> Software Back-end Developer.</span></h3>
-                <div class="button">
-                    <a href="https://api.whatsapp.com/send/?phone=48999534479" target="_blank" class="btn">come and say Hello 👋</a>
-                    <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>See my work</a>
+<!--about section design-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/Junior Photo for CV-linkedin 18-09-2023.png" alt="Profile Picture of Heinz Stranner Junior">
+    </div>
+
+    <div class="about-text">
+        <h2>About <span>Me</span></h2> 
+        <h4>Just passionate about coding.</h4>
+        <p>&bull; Finishing my degree in Systems Analysis and Development in mid-2025.</p>
+        <p>&bull; With 3 year experience and 6 months Profissional experience</p>
+        <p>&bull; C2 Fluent German Level</a></p>
+        <p>&bull; B2 Intermediary English Level</a></p>
+        <p>&bull; With different certifications with a main focus on Spring Framework, 
+             always learning more and more including various tools</p>
+        
+             <div class="socials-container">
+                <div class="socials">
+                    <div class="social-box">
+                        <a href="https://www.linkedin.com/in/heinz-stranner-junior-0838b1238/" target="_blank" class="btn-socials"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="social-box">
+                        <a href="https://github.com/Junior-Stranner" target="_blank" class="btn-socials"><i class="bx bxl-github"></i></a>
+                    </div>
+                    <div class="social-box">
+                        <a href="https://www.tiktok.com/@o.viyin" target="_blank" class="btn-socials"><i class="bx bxl-tiktok"></i></a>
+                    </div>
+                    <div class="social-box">
+                        <a href="https://www.instagram.com/judev.stranner/?next=%2Fjunior_stranner%2F" target="_blank" class="btn-socials"><i class="bx bxl-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!--about section design-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/Junior Photo for CV-linkedin 18-09-2023.png">
-        </div>
-
-        <div class="about-text">
-            <h2>About <span>Me</span></h2> 
-            <h4>Just passionate about coding.</h4>
-            <p>&bull; Finishing my degree in Systems Analysis and Development in mid-2025.</p>
-            <p>&bull; With 2.5 year experience(not profissional)</p>
-            <p>&bull; B2 Intermediary English Level</a></p>
-            <p>&bull; With different certifications with a main focus on Spring Framework, 
-                 always learning more and more including various tools</p>
-            
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/heinz-stranner-junior-0838b1238/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
-                <a href="https://github.com/Junior-Stranner" target="_blank" class="btn-socials"><span><i class="bx bxl-github"></i></a>
-                <a href="https://www.tiktok.com/@o.viyin" target="_blank" class="btn-socials"><span><i class="bx bxl-tiktok"></i></a>
-                <a href="https://www.instagram.com/judev.stranner/?next=%2Fjunior_stranner%2F" target="_blank" class="btn-socials"><span><i class="bx bxl-instagram"></i></i></a>
-
-            </div>
-        </div>
-    </section>
-
 </section>
 
 <section class="experience" id="experience">
@@ -86,135 +105,133 @@
         <button class="tab-button" onclick="openTab(event, 'courses')">Courses</button>
     </div>
 
-    <!-- Conteúdo das abas -->
-    <div id="graduation" class="tab-content active">
-        <div class="main-text">
-            <p>Professional</p>
-            <h2><span>Academic</span> Experiences <br></h2>
-        </div>
-
-        <div class="timeline">
-            <div class="container">
-                <img src="images/estácio.png">
-                <div class="text-box">
-                    <small>2022 - <span>Now</span></small>
-                    <h5><b><span>Centro Universitário Estácio</span></b> Technologist degree in Systems Analysis and Development</h5>
-                    <p>I transferred to ESTÁCIO in mid-2023. It was a good decision, as I had some complications at my previous college. I'm still studying at Estácio and will graduate at the end of 2024.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <!-- Adicione mais cursos conforme necessário -->
-        </div>
-
-        <div class="timeline">
-            <div class="container">
-                <img src="images/senac.png">
-                <div class="text-box">
-                    <small>2022 - <span>2023</span></small>
-                    <h5><b><span>Senac</span></b> Technologist degree in Systems Analysis and Development</h5>
-                    <p>I started my Bachelor's degree in Systems Analysis and Development (ADS) in 2022. Due to some complications at my previous college, I transferred to ESTÁCIO in mid-2023. It was a good decision, and I'm still studying at Estácio, planning to graduate at the end of 2024.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <!-- Adicione mais cursos conforme necessário -->
-        </div>
+ <!-- Conteúdo das abas -->
+<div id="graduation" class="tab-content active">
+    <div class="main-text">
+        <p>Professional</p>
+        <h2><span>Academic</span> Experiences <br></h2>
     </div>
 
-    <div id="work" class="tab-content">
-        <div class="main-text">
-            <p>Professional</p>
-            <h2><span>Work</span> Experiences <br></h2>
-        </div>
-
-        <div class="timeline">
-            <div class="container">
-                <img src="images/workplace.png">
-                <div class="text-box">
-                    <small>Nov 2024 - <span>Possible Conclusion Aug 2025</span></small>
-                    <h5><b><span>Internship</span> at TT&T Soluções em Informática Ltda</h5>
-                    <p>Main Activities: Creation of mobile and web applications and systems, covering the areas of Software Engineering, Development, and Management. Complete development of systems, from understanding the requirements to approval and production. Application of the Scrum methodology (Planning, Sprint, Daily, Retrospective) using Trello. Elicitation, analysis, and validation of requirements, in addition to software modeling using UML, mind maps, and documentation. Planning, designing user flows, and conducting user tests. Direct collaboration with development and research teams. Implementation of REST APIs using Java, Spring Boot, and MySQL database. Version control with Git and GitHub.</p>
-                </div>
+    <div class="timeline">
+        <div class="container">
+            <img src="images/estácio.png">
+            <div class="text-box">
+                <small>2022 - <span>Now</span></small>
+                <h5><b><span>Centro Universitário Estácio</span></b> Technologist degree in Systems Analysis and Development</h5>
+                <p>I transferred to ESTÁCIO in mid-2023. It was a good decision, as I had some complications at my previous college. I'm still studying at Estácio and will graduate at the end of 2024.</p>
             </div>
-            <div class="line"></div>
         </div>
-        
-
-        <div class="timeline">
-            <div class="container">
-                <img src="images/workplace.png">
-                <div class="text-box">
-                    <small>07/2024 - <span>11/2024</span></small>
-                    <h5><b><span>Web and UX/UI Designer Internship</span> at EasyApp Tecnologia da Informação</h5>
-                    <p>Main Activities: Creation and customization of websites with Elementor, ensuring responsive design and good usability (UX). Performance optimization with image compression and use of cache. File management via FTP and hosting configuration, including domains and emails. Technical troubleshooting to ensure stability and high availability.</p>
-                </div>
+        <div class="line"></div>
+        <!-- Adicione mais cursos conforme necessário -->
+    </div>
+    
+    <div class="timeline">
+        <div class="container">
+            <img src="images/senac.png">
+            <div class="text-box">
+                <small>2022 - <span>2023</span></small>
+                <h5><b><span>Senac</span></b> Technologist degree in Systems Analysis and Development</h5>
+                <p>I started my Bachelor's degree in Systems Analysis and Development (ADS) in 2022. Due to some complications at my previous college, I transferred to ESTÁCIO in mid-2023. It was a good decision, and I'm still studying at Estácio, planning to graduate at the end of 2024.</p>
             </div>
-            <div class="line"></div>
         </div>
-        
+        <div class="line"></div>
+        <!-- Adicione mais cursos conforme necessário -->
+    </div>
+</div>
+
+<div id="work" class="tab-content">
+    <div class="main-text">
+        <p>Professional</p>
+        <h2><span>Work</span> Experiences <br></h2>
     </div>
 
-    <div id="courses" class="tab-content">
-        <div class="main-text">
-            <p>Professional</p>
-            <h2><span>Courses</span> Experiences <br></h2>
+    <div class="timeline">
+        <div class="container">
+            <img src="images/workplace.png">
+            <div class="text-box">
+                <small>Nov 2024 - <span>Possible Conclusion Aug 2025</span></small>
+                <h5><b><span>Internship</span> at TT&T Soluções em Informática Ltda</h5>
+                <p>Main Activities: Creation of mobile and web applications and systems, covering the areas of Software Engineering, Development, and Management. Complete development of systems, from understanding the requirements to approval and production. Application of the Scrum methodology (Planning, Sprint, Daily, Retrospective) using Trello. Elicitation, analysis, and validation of requirements, in addition to software modeling using UML, mind maps, and documentation. Planning, designing user flows, and conducting user tests. Direct collaboration with development and research teams. Implementation of REST APIs using Java, Spring Boot, and MySQL database. Version control with Git and GitHub.</p>
+            </div>
         </div>
-
-        <div class="timeline">
-            <div class="container">
-                <img src="images/Curso-online.webp">
-                <div class="text-box">
-                    <small>08/2023 - <span>12/2023</span></small>
-                    <h5><b><span>Docker - Do Básico ao Avançado</span> Udemy Platform</h5>
-                    <p>This course helped me master Docker and its ecosystem, allowing me to create efficient containerized applications and manage them effectively.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <div class="container">
-                <img src="images/Curso-online.webp">
-                <div class="text-box">
-                    <small>09/2023 - <span>11/2023</span></small>
-                    <h5><b><span>Microsserviços com Spring Boot</span> Udemy Platform</h5>
-                    <p>I learned about the architecture of microservices and how to implement them using Spring Boot to create scalable and efficient applications.</p>
-                </div>
-            </div>
-
-            <!-- Adicionando todos os cursos aqui -->
-            <div class="container">
-                <img src="images/Curso-online.webp">
-                <div class="text-box">
-                    <small>08/2023 - <span>12/2023</span></small>
-                    <h5><b><span>REST API's RESTFul do 0 à AWS c. Spring Boot 3 Java e Docker</span> Udemy Platform</h5>
-                    <p>A complete course, I had certain difficulties with some not so up-to-date technologies, but it was a very good course and suitable for everyone. 70% of the skills I acquired were in this course.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <div class="container">
-                <img src="images/Curso-online.webp">
-                <div class="text-box">
-                    <small>07/2022 - <span>09/2022</span></small>
-                    <h5><b><span>Java Completo - Do Básico ao Avançado</span> Udemy Platform</h5>
-                    <p>This course helped me a lot to consolidate my Java knowledge, especially through the hands-on projects included in it.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <div class="container">
-                <img src="images/Curso-online.webp">
-                <div class="text-box">
-                    <small>06/2022 - <span>07/2022</span></small>
-                    <h5><b><span>Spring Boot 3: Crie API RESTful com Java</span> Udemy Platform</h5>
-                    <p>I learned how to develop Java applications using Spring Boot, focusing on building robust RESTful APIs.</p>
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <!-- Adicione mais cursos conforme necessário -->
-        </div>
+        <div class="line"></div>
     </div>
+    
+    
+    <div class="timeline">
+        <div class="container">
+            <img src="images/workplace.png">
+            <div class="text-box">
+                <small>07/2024 - <span>11/2024</span></small>
+                <h5><b><span>Web and UX/UI Designer Internship</span> at EasyApp Tecnologia da Informação</h5>
+                <p>Main Activities: Creation and customization of websites with Elementor, ensuring responsive design and good usability (UX). Performance optimization with image compression and use of cache. File management via FTP and hosting configuration, including domains and emails. Technical troubleshooting to ensure stability and high availability.</p>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    
+</div>
+
+<div id="courses" class="tab-content">
+    <div class="main-text">
+        <p>Professional</p>
+        <h2><span>Courses</span> Experiences <br></h2>
+    </div>
+
+    <div class="timeline">
+        <div class="container">
+            <img src="images/Curso-online.webp">
+            <div class="text-box">
+                <small>08/2023 - <span>12/2023</span></small>
+                <h5><b><span>Docker - Do Básico ao Avançado</span> Udemy Platform</h5>
+                <p>This course helped me master Docker and its ecosystem, allowing me to create efficient containerized applications and manage them effectively.</p>
+            </div>
+        </div>
+        <div class="line"></div>
+    
+        <div class="container">
+            <img src="images/Curso-online.webp">
+            <div class="text-box">
+                <small>09/2023 - <span>11/2023</span></small>
+                <h5><b><span>Microsserviços com Spring Boot</span> Udemy Platform</h5>
+                <p>I learned about the architecture of microservices and how to implement them using Spring Boot to create scalable and efficient applications.</p>
+            </div>
+        </div>
+    
+        <!-- Adicionando todos os cursos aqui -->
+        <div class="container">
+            <img src="images/Curso-online.webp">
+            <div class="text-box">
+                <small>08/2023 - <span>12/2023</span></small>
+                <h5><b><span>REST API's RESTFul do 0 à AWS c. Spring Boot 3 Java e Docker</span> Udemy Platform</h5>
+                <p>A complete course, I had certain difficulties with some not so up-to-date technologies, but it was a very good course and suitable for everyone. 70% of the skills I acquired were in this course.</p>
+            </div>
+        </div>
+        <div class="line"></div>
+    
+        <div class="container">
+            <img src="images/Curso-online.webp">
+            <div class="text-box">
+                <small>07/2022 - <span>09/2022</span></small>
+                <h5><b><span>Java Completo - Do Básico ao Avançado</span> Udemy Platform</h5>
+                <p>This course helped me a lot to consolidate my Java knowledge, especially through the hands-on projects included in it.</p>
+            </div>
+        </div>
+        <div class="line"></div>
+    
+        <div class="container">
+            <img src="images/Curso-online.webp">
+            <div class="text-box">
+                <small>06/2022 - <span>07/2022</span></small>
+                <h5><b><span>Spring Boot 3: Crie API RESTful com Java</span> Udemy Platform</h5>
+                <p>I learned how to develop Java applications using Spring Boot, focusing on building robust RESTful APIs.</p>
+             </div>
+          </div>
+         <div class="line"></div>
+    
+        <!-- Adicione mais cursos conforme necessário --> 
+     </div>
 </section>
-
 
 
 
@@ -230,7 +247,7 @@
             <p>Projects</p>
             <h2>My <span>Projects</span></h2>
         </div>
-
+    
         <div class="portfolio-content">
             <a href="https://github.com/Junior-Stranner/e-commerce" target="_blank" class="row">
                 <img src="images/userAuth.png" alt="e-commerce - Back-end">
@@ -241,7 +258,7 @@
                     <h6>Work in progress!</h6>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Online-Bibliotec-DataJPA" target="_blank" class="row">
                 <img src="images/Add Authrntication Ju.png" alt="Online Bibliotec/Library">
                 <div class="layer">
@@ -250,7 +267,7 @@
                     <p>Online Library with all entities related to each other...</p>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Fullstack-Login-Page" target="_blank" class="row">
                 <img src="images/Tela Cadastro Signup.png" alt="Login Page">
                 <div class="layer">
@@ -259,7 +276,7 @@
                     <p>I created a registration and login screen with Java Spring and Angular...</p>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/parking-api" target="_blank" class="row">
                 <img src="images/Add Authrntication Ju.png" alt="Parking-API">
                 <div class="layer">
@@ -268,7 +285,7 @@
                     <p>I'm developing a Parking app where I register my user who will receive a client...</p>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Online-Bibliotec" target="_blank" class="row">
                 <img src="images/Biblioteca-Online.jpeg" alt="Online Bibliotec/Library">
                 <div class="layer">
@@ -277,7 +294,7 @@
                     <p>At the beginning of my Journey with Spring, I developed this online Library...</p>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Pix-Payment-System" target="_blank" class="row">
                 <img src="images/Email-send.png" alt="Pix Payment-API">
                 <div class="layer">
@@ -286,7 +303,7 @@
                     <p>I did a Pix simulation where I send the pix to whoever I want and the receiver will...</p>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Developer-Challenge-Trainment" target="_blank" class="row">
                 <img src="images/Java-vs-C-Sharp.jpg" alt="Excercicios de lógica de Programação">
                 <div class="layer">
@@ -296,7 +313,7 @@
                     <h6>Work in progress !</h6>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/Ageny-Haven" target="_blank" class="row">
                 <img src="images/twitter-app.webp" alt="simple Twitter clone">
                 <div class="layer">
@@ -306,7 +323,7 @@
                     <h6>Work in progress !</h6>
                 </div>
             </a>
-
+    
             <a href="https://github.com/Junior-Stranner/EventoTec-spring" target="_blank" class="row">
                 <img src="images/technology-innovation-digital-evolution-homepage.avif" alt="TecEvent">
                 <div class="layer">
@@ -317,7 +334,7 @@
             </a>
         </div>
     </div>
-
+    
     <div id="collaborations" class="tab-content">
         <div class="main-text">
             <p>Projects</p>
@@ -332,7 +349,7 @@
                 </div>
             </a>
         </div> </div>
-
+    
     <div id="academic-projects" class="tab-content">
         <div class="main-text">
             <p>Education</p>
@@ -349,7 +366,6 @@
 <!--about section design-->
 <section class="skills" id="skills">
     <div class="main-text">
-        <!--<p>What I am Good In</p>-->   
         <h2><span>My</span> Skills</h2>
     </div>
 
@@ -360,21 +376,21 @@
             </div>
             <h3>Java</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-spring-boot"></i>
             </div>
             <h3>Spring Framework</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-spring-boot"></i>
             </div>
             <h3>Spring Boot</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bx-data"></i>
@@ -402,35 +418,35 @@
             </div>
             <h3>JSP</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-spring-boot"></i>
             </div>
             <h3>Thymeleaf</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bx-data"></i>
             </div>
             <h3>PostgreSQL</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bx-data"></i>
             </div>
             <h3>MySQL</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-swagger"></i>
             </div>
             <h3>Documentation (Swagger OpenAPI)</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-c-sharp"></i>
@@ -444,7 +460,7 @@
             </div>
             <h3>JWT (Json Web Token)</h3>
         </div>
-    
+
         <div class="box">
             <div class="s-icons">
                 <i class=""></i>
@@ -455,7 +471,6 @@
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-postman"></i>
-                <box-icon name='javascript' type='logo'></box-icon>
             </div>
             <h3>JavaScript</h3>
         </div>
@@ -467,7 +482,6 @@
             <h3>Postman</h3>
         </div>
 
-        <!-- Added Docker and Microservices -->
         <div class="box">
             <div class="s-icons">
                 <i class="bx bxl-docker"></i>
@@ -482,26 +496,25 @@
             <h3>Microservices</h3>
         </div>
     </div>
-
 </section>
 
 
 
 
-    <!--end section design-->
-    <section class="end">
-        <div class="last-text">
-            <p>Copyright &#169; 2024 by Heinz Stranner Junior.</p>
-        </div>
-    </section>
-
-    <div id="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt "></i></a>
+  <!--end section design-->
+<section class="end">
+    <div class="last-text">
+        <p>Copyright &#169; 2024 by Heinz Stranner Junior.</p>
     </div>
-    <!--custom js link-->
-    <script type="text/javascript" src="js/botao.js"></script>
-    <script type="text/javascript" src="js/Menu.js"></script>
-    <script type="text/javascript" src="js/tabs.js"></script>
+</section>
+
+<div id="top">
+    <a href="#home"><i class="bx bx-up-arrow-alt "></i></a>
+</div>
+<!--custom js link-->
+<script type="text/javascript" src="js/botao.js"></script>
+<script type="text/javascript" src="js/Menu.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
 
 </body>
 

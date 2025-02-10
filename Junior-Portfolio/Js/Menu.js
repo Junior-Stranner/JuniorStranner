@@ -3,11 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const closeMenu = document.getElementById('close-menu');
 
-    menuIcon.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-    });
+    if (menuIcon && mobileMenu && closeMenu) {
+        menuIcon.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+        });
 
-    closeMenu.addEventListener('click', function() {
-        mobileMenu.classList.remove('active');
-    });
+        closeMenu.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+        });
+    } else {
+        console.error("Erro: Um ou mais elementos não foram encontrados no DOM.");
+    }
 });
