@@ -67,12 +67,17 @@ header .logo {
   color: var(--main-color);
 }
 
+/* Ícone do menu */
 #menu-icon {
-  font-size: 35px;
-  color: var(--text-color);
+  display: none; /* Oculta o ícone por padrão */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
   cursor: pointer;
-  display: none;
+  z-index: 1000;
 }
+
 
 /* Mobile Menu Styles */
 .mobile-menu {
@@ -118,9 +123,10 @@ header .logo {
   right: 20px;
 }
 
-@media (max-width: 800px) {
+/* Exibe o ícone apenas em telas pequenas (mobile) */
+@media (max-width: 768px) {
   #menu-icon {
-      display: block;
+      display: block; /* Mostra o ícone apenas na versão mobile */
   }
 
   .navlist {
