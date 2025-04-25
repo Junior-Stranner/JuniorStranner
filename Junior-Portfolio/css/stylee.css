@@ -306,16 +306,17 @@ header .logo span {
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
   transition: var(--transition);
+
 }
 
 .about-img img:hover {
   transform: scale(1.02);
+
 }
 
 .profile-mobile-img {
-  display: none;
-  width: 180px;
-  height: 180px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--card-shadow);
