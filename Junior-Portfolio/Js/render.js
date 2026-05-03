@@ -178,4 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderSkills();
   setupTabs();
+
+  document.dispatchEvent(new CustomEvent("portfolio:content-rendered"));
 });

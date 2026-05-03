@@ -24,6 +24,16 @@ export const experiencesData = {
 
   work: [
     {
+      period: "Dec 2025",
+      endPeriod: "Now",
+      title: "Technology Professional",
+      subtitle: "at Mercado Livre",
+      description:
+        "Currently working at Mercado Livre, where I continue developing my professional experience in the technology market. I started in December 2025 and have been there for around six months, growing through daily practice, teamwork, and real business challenges.",
+      image: "assets/computer_desktop_icon.png",
+      imageAlt: "Work experience icon",
+    },
+    {
       period: "Nov 2024",
       endPeriod: "Possible Conclusion Aug 2025",
       title: "Internship",
