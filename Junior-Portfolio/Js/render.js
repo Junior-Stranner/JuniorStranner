@@ -1,4 +1,5 @@
 import { projectsData } from "./projetcts-data.js";
+import { experiencesData } from "./experiences-data.js";
 import { skillsData } from "./skills-data.js";
 
 const projectContainers = {
@@ -8,6 +9,11 @@ const projectContainers = {
 };
 
 const fallbackProjectImage = "assets/files.png";
+const experienceContainers = {
+  graduation: "graduation-container",
+  work: "work-container",
+  courses: "courses-container",
+};
 
 function createProjectCard(project) {
   const wrapper = document.createElement(project.link && project.link !== "#" ? "a" : "article");
@@ -50,6 +56,59 @@ function renderProjects(category, containerId) {
   if (!container || !projects) return;
 
   container.replaceChildren(...projects.map(createProjectCard));
+}
+
+function createExperienceItem(experience) {
+  const timeline = document.createElement("div");
+  timeline.className = "timeline";
+
+  const container = document.createElement("div");
+  container.className = "container";
+
+  const image = document.createElement("img");
+  image.src = experience.image;
+  image.alt = experience.imageAlt;
+  image.loading = "lazy";
+
+  const textBox = document.createElement("div");
+  textBox.className = "text-box";
+
+  const period = document.createElement("small");
+  period.textContent = `${experience.period} - `;
+
+  const endPeriod = document.createElement("span");
+  endPeriod.textContent = experience.endPeriod;
+  period.appendChild(endPeriod);
+
+  const title = document.createElement("h5");
+  const strong = document.createElement("b");
+  const highlightedTitle = document.createElement("span");
+  highlightedTitle.textContent = experience.title;
+
+  strong.appendChild(highlightedTitle);
+  title.append(strong, ` ${experience.subtitle}`);
+
+  const description = document.createElement("p");
+  description.textContent = experience.description;
+
+  textBox.append(period, title, description);
+  container.append(image, textBox);
+
+  const line = document.createElement("div");
+  line.className = "line";
+
+  timeline.append(container, line);
+
+  return timeline;
+}
+
+function renderExperiences(category, containerId) {
+  const container = document.getElementById(containerId);
+  const experiences = experiencesData[category];
+
+  if (!container || !experiences) return;
+
+  container.replaceChildren(...experiences.map(createExperienceItem));
 }
 
 function createSkillCard(skill) {
@@ -109,6 +168,10 @@ function setupTabs() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  Object.entries(experienceContainers).forEach(([category, containerId]) => {
+    renderExperiences(category, containerId);
+  });
+
   Object.entries(projectContainers).forEach(([category, containerId]) => {
     renderProjects(category, containerId);
   });
