@@ -1,0 +1,140 @@
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 1200px) {
+  :root {
+    --section-padding: 100px 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .navlist a {
+    margin: 0 15px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .profile-mobile-img {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navlist {
+    display: none;
+  }
+
+  .home {
+    padding: 120px 5% 80px;
+    background-attachment: scroll;
+  }
+
+  .home-text h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .home-text h3 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn,
+  .btn2 {
+    width: 100%;
+  }
+
+  .experience,
+  .portfolio,
+  .skills {
+    padding: 80px 5%;
+  }
+
+  .tabs {
+    gap: 10px;
+  }
+
+  .tab-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .timeline::after {
+    left: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .box {
+    padding: 20px 15px;
+  }
+
+  .s-icons {
+    font-size: 30px;
+  }
+
+  .box h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .one,
+  .two {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 10px;
+    font-size: 1.2rem;
+  }
+
+  .tab-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
