@@ -1,0 +1,81 @@
+/* ===============================
+   Shared Patterns
+================================ */
+
+.about,
+.experience,
+.portfolio,
+.skills {
+  padding: var(--section-padding);
+}
+
+.experience,
+.skills {
+  background: var(--color-surface);
+}
+
+.btn,
+.btn2,
+.tab-button,
+.social-box,
+.container,
+.row,
+.box,
+#top i {
+  transition: var(--transition);
+}
+
+.btn,
+.btn2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn,
+.tab-button.active,
+.social-box:hover,
+.box:hover,
+#top i {
+  background: var(--gradient-accent);
+}
+
+.btn:hover,
+.btn2:hover,
+.social-box:hover,
+.about-img img:hover,
+.container:hover,
+#top i:hover {
+  transform: translateY(-5px);
+}
+
+.main-text {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-text p {
+  margin-bottom: 10px;
+  color: var(--color-accent);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-text h2,
+.about-text h2 {
+  font-size: var(--font-lg);
+}
+
+.main-text h2 span,
+.about-text h2 span,
+.home-text h3 span,
+.text-box h5 span,
+header .logo span {
+  color: var(--color-accent);
+}
