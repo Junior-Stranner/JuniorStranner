@@ -1,0 +1,63 @@
+/* ===============================
+   Base
+================================ */
+
+:root {
+  --color-bg: #121212;
+  --color-surface: #1e1e2e;
+  --color-surface-soft: rgba(255, 255, 255, 0.05);
+  --color-surface-hover: rgba(255, 255, 255, 0.08);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-text: #f8f8f8;
+  --color-muted: #b6b6b6;
+  --color-accent: #6366f1;
+  --color-accent-strong: #4f46e5;
+  --gradient-accent: linear-gradient(135deg, #6366f1 0%, #22d3ee 100%);
+
+  --font-main: "Poppins", sans-serif;
+  --font-xl: clamp(3rem, 8vw, 5rem);
+  --font-lg: clamp(2rem, 5vw, 3rem);
+  --font-body: 1.1rem;
+  --font-small: 0.9rem;
+
+  --radius: 8px;
+  --radius-pill: 999px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --transition: 0.3s ease;
+  --section-padding: 120px 10% 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
